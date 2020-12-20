@@ -1,0 +1,187 @@
+html,body{
+    background: #e8e8e8;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+.card,.card0{
+    position: relative;
+    border-radius: 16px;
+    width: 500px;
+    height: 281px;
+    /* background: url(../img/wall3.jpg); */
+    overflow: hidden;
+    box-shadow: 0 5px 50px #000000d9;
+    background-color: rgba(0,0,0,0.92);
+}
+
+.card h1,
+.card0 h1{
+    text-align: center;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: 80%;
+    width:100%;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.card:hover h1,
+.card0:hover h1{
+    display: none;
+}
+
+
+
+/* Content */
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 20px 20px;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+
+
+
+.content h2,.content h4{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content h2{
+    color: aqua;
+    font-size: 25px;
+
+}
+
+
+.content h4{
+    font-size: 15px;
+}
+
+
+
+/*** Vertical split ***/
+
+.img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+.img span{
+    width: 25%;
+    height: 100%;
+    background-image: url(../img/wall3.jpg);
+    transition: 1s;
+}
+
+.img span:nth-child(1){
+    background-position: 0;
+    transition-delay: 0;
+}
+.img span:nth-child(2){
+    background-position:33.3%;
+    transition-delay: .1s ;
+}
+.img span:nth-child(3){
+    background-position:66.6%;
+    transition-delay: .2s;
+}
+.img span:nth-child(4){
+    background-position: 100%;
+    transition-delay: .3s;
+}
+
+.card:hover .img>span{
+    transform: translateY(-100%);
+}
+
+.card:hover .content{
+    transform: translateY(0%);
+    transition: .8s;
+    transition-delay:.4s;
+}
+
+
+
+
+
+
+
+/**** Horizontal split Card0 *****/
+
+.img0{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.img0 span{
+    width: 100%;
+    height: 25%;
+    background-image: url(../img/wall3.jpg);
+    transition: 1.5s;
+}
+
+.img0 span:nth-child(1){
+    background-position: 0 0;
+    transition-delay: 0;
+}
+.img0 span:nth-child(2){
+    background-position:0 33.3%;
+    transition-delay: .1s ;
+}
+.img0 span:nth-child(3){
+    background-position:0 66.6%;
+    transition-delay: .2s;
+}
+.img0 span:nth-child(4){
+    background-position: 0 100%;
+    transition-delay: .3s;
+} 
+
+.card0:hover .img0>span{
+    transform: translateX(-400%);
+}
+
+.card0:hover .content{
+    transform: translateY(0%);
+    transition: .8s;
+    transition-delay:.6s;
+}
+
+
+
+
+
+
+
+
+
+

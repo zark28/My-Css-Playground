@@ -1,0 +1,100 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+width: 100vw;
+height: 100vh;
+}
+
+section{
+    height: 90%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.phone{
+    width: 375px;
+    height: 812px;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 2px 2px 4px #000,
+    -2px -2px 4px #bebebe;
+
+}
+
+.ph1{
+    background-image:linear-gradient(45deg,#11998e, #38ef7d);
+}
+
+
+.ph2{
+    background-image:linear-gradient(45deg,#f12711, #f5af19);
+}
+
+
+.phone p, .phone span{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%; 
+
+}
+
+.phone span{
+    width: 300px;
+    height: 300px;
+}
+
+.phone p{
+    width: 200px;
+    height: 200px;
+    background-color: chartreuse;
+}
+
+
+/* .ph1 span{
+    background-image:linear-gradient(45deg, #38ef7d,#11998e);
+ 
+
+}
+
+.ph2 span{
+    background-image:linear-gradient(45deg, #f5af19,#f12711);
+  
+    
+} */
+
+/* .ph1 span{
+    background-image:linear-gradient(45deg,#11998e, #38ef7d);
+      
+} 
+
+.ph2 span{
+    background-image:linear-gradient(45deg,#f12711,#f5af19);
+   
+} */
+
+
+.phone span{
+    box-shadow: 2px 2px 4px #000,
+    -2px -2px 4px #fff;
+}
+.ph1 p{
+    background-image:linear-gradient(45deg, #38ef7d,#11998e);
+      
+} 
+
+.ph2 p{
+    background-image:linear-gradient(45deg,#f5af19,#f12711);
+   
+}

@@ -1,0 +1,65 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  /* background: whi; */
+}
+
+/* utilities */
+button {
+  padding: 1rem 4rem;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 2px 4px 4px #f1f1f1 inset, -2px -4px 4px inset;
+}
+
+.project-card button:active {
+  box-shadow: 2px 4px 4px inset, -2px -4px 4px #f1f1f1 inset;
+}
+
+
+
+.project-card a button{
+  outline: none;
+  border: none;
+}
+
+/* card holding section */
+section {
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(300px, 500px));
+  grid-template-rows: repeat(3, minmax(300px, 1fr));
+  box-shadow: 2px 4px 4px 2px inset, -2px -4px 4px #f1f1f1 inset;
+}
+
+.project-card {
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* background-color: violet; */
+  margin: 0.3rem;
+  justify-content: space-between;
+  /* box-shadow: 2px 4px 4px #f1f1f1 inset,
+    -2px -4px 4px inset; */
+  border: 0.2rem solid;
+}
+.project-card:hover,
+.project-card:focus {
+  border: none;
+  box-shadow: 2px 4px 4px #f1f1f1 inset, -2px -4px 4px inset;
+}
